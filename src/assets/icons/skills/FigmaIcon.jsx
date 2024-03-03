@@ -1,0 +1,39 @@
+export const FigmaIcon = (props) => {
+  return (
+    <svg
+      width="1em"
+      viewBox="0 0 128 128"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <g clipPath="url(#prefix__clip0_92_32)">
+        <path
+          d="M45.5 129c11.9 0 21.5-9.6 21.5-21.5V86H45.5C33.6 86 24 95.6 24 107.5S33.6 129 45.5 129z"
+          fill="#0ACF83"
+        />
+        <path
+          d="M24 64.5C24 52.6 33.6 43 45.5 43H67v43H45.5C33.6 86 24 76.4 24 64.5z"
+          fill="#A259FF"
+        />
+        <path
+          d="M24 21.5C24 9.6 33.6 0 45.5 0H67v43H45.5C33.6 43 24 33.4 24 21.5z"
+          fill="#F24E1E"
+        />
+        <path
+          d="M67 0h21.5C100.4 0 110 9.6 110 21.5S100.4 43 88.5 43H67V0z"
+          fill="#FF7262"
+        />
+        <path
+          d="M110 64.5c0 11.9-9.6 21.5-21.5 21.5S67 76.4 67 64.5 76.6 43 88.5 43 110 52.6 110 64.5z"
+          fill="#1ABCFE"
+        />
+      </g>
+      <defs>
+        <clipPath id="prefix__clip0_92_32">
+          <path fill="#fff" d="M0 0h128v128H0z" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+}
