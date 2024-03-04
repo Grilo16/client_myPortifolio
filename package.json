@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://grilo16.github.io/client_myPortifolio/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
