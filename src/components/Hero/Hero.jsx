@@ -28,7 +28,6 @@ export const Hero = () => {
                 <form action="/TomBrittonCv.pdf" value={"Download CV"} target="_blank">
                     <StyledButton> <Paragraph>Get My Resume</Paragraph></StyledButton>
                 </form>
-                <p>Maybe adding a paragraph will help</p>
             </ContentWrapper>
         </Section>
     )
