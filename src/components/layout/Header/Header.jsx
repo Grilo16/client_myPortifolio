@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { Heading } from "../Text"
 import { LayoutSelector, SetMarginPadding, ThemeSelector } from "../../../style"
 import { ContentWrapper } from "../ContentWrapper"
-import { GitHubIcon, LinkedInIcon } from "../../../assets"
+import { GitHubIcon, GmailIcon, LinkedInIcon } from "../../../assets"
 
 export const Header = () => {
     return (
@@ -13,7 +13,10 @@ export const Header = () => {
               justifyContent={"center"}
               padding={"2rem"}
             >
-              <a href="https://github.com/Grilo16/" target="_blank">
+              <a href="mailto:tom.jf.britton@gmail.com?subject=Hi I saw your portifolio">
+                <GmailIcon width={"2rem"}/>
+              </a>
+              <a href="https://github.com/Grilo16/" target="_blank"> 
                 <GitHubIcon width={"2rem"} />
               </a>
               <a href="https://www.linkedin.com/in/tom-jf-britton/" target="_blank">

@@ -15,10 +15,12 @@ export const Footer = () => {
         >
           <Subheading>Contact</Subheading>
           <ContentWrapper layout={"flex-column"} gap={"1rem"}>
+            <a href="mailto:tom.jf.britton@gmail.com?subject=Hi I saw your portifolio"> 
             <ContentWrapper layout={"flex"} gap={"1rem"} alignItems={"center"}>
               <MailIcon width={"2rem"} />
               <Paragraph>tom.jf.britton@gmail.com</Paragraph>
             </ContentWrapper>
+            </a> 
 
             <ContentWrapper layout={"flex"} gap={"1rem"} alignItems={"center"}>
               <PhoneIcon width={"2rem"} />
@@ -75,3 +77,4 @@ const StyledButton = styled.button`
   padding: 0.6rem 1rem;
   align-self: center;
 `;
+
