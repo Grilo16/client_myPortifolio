@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import { BorderRadius, SectionPadding, ThemeSelector } from "../../../style";
+import { AssignedThemes, BorderRadius, SectionPadding, ThemeSelector } from "../../../style";
 import { GitHubIcon, LinkedInIcon, MailIcon, PhoneIcon } from "../../../assets";
 import { ContentWrapper } from "../ContentWrapper";
 import { Paragraph, Subheading } from "../Text";
 
 export const Footer = () => {
   return (
-    <StyledFooter $theme={"dark"}>
+    <StyledFooter $theme={AssignedThemes.footer}>
       <ContentWrapper layout={"auto-grid"}>
         <ContentWrapper
           layout={"flex-column"}
@@ -68,7 +68,7 @@ const StyledFooter = styled.footer`
   flex-direction: column;
   gap: 1rem;
 
-  padding-block: 1rem;
+  padding-block: 2rem 1rem;
 `;
 
 const StyledButton = styled.button`

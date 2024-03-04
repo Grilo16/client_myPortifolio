@@ -15,5 +15,8 @@ const StyledButton = styled.button`
 padding: 0 0.25rem;  
 min-height: 100%;
 ${LineHighlightOnHover};
-
+background: transparent !important;
+& > p {
+  color: white !important;
+}
 `

@@ -1,3 +1,4 @@
+import { AssignedThemes } from "../../../../../../../style"
 import { ContentWrapper } from "../../../../../../layout"
 import { ProjectFeatureOverview } from "./ProjectFeatureOverview"
 import { ProjectOverview } from "./ProjectOverview"
@@ -7,7 +8,7 @@ export const BackFaceBody = ({children, pageData, currentPage, stack, overview, 
 
     return (
         <ContentWrapper
-            theme={"dark"}
+            theme={AssignedThemes.projects.card.back.body}
             overflow={"scroll"}
             layout={"flex-column"}
             justifyContent={"stretch"}

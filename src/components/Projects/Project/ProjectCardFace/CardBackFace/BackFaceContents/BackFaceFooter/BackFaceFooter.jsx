@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import { LeftArrowIcon, RightArrowIcon } from "../../../../../../../assets"
 import { ContentWrapper, Paragraph } from "../../../../../../layout"
+import { AssignedThemes } from "../../../../../../../style"
 
 export const BackFaceFooter = ({children, nextPage, previousPage, currentPage, pages, setCurrentPage, ...props}) => {
 
@@ -8,7 +9,7 @@ export const BackFaceFooter = ({children, nextPage, previousPage, currentPage, p
 
     return (
         <ContentWrapper
-            theme={"dark"}
+            theme={AssignedThemes.projects.card.back.footer}
             layout={"flex"}
             justifyContent={"space-around"}
             alignItems={"center"}
@@ -56,4 +57,5 @@ const PageIndicator = styled.button`
 const ArrowButtonWrapper = styled.button`
     min-height: 2rem;
     min-width: 2rem;
+    background: transparent !important;
 `

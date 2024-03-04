@@ -78,6 +78,10 @@ export const GlobalStyles = createGlobalStyle`
         text-decoration-skip-ink: auto;
     }
 
+    a{
+        text-decoration-color: white;
+    }
+
     /* Make images easier to work with */
     img,
     picture {

@@ -1,51 +1,106 @@
 import {css} from "styled-components"
 
+const BackgroundDark = css`
+    background-color: ${({theme}) => theme.colors.background.dark};
+`
+const BackgroundDarkAccent = css`
+    background-color: ${({theme}) => theme.colors.background.accent.dark};
+
+`
+const BackgroundLight = css`
+    background-color: ${({theme}) => theme.colors.background.light};
+
+`
+const BackgroundLightAccent = css`
+    background-color: ${({theme}) => theme.colors.background.accent.light};
+`
+const TextLight = css`
+    color:  ${({theme}) => theme.colors.text.light};
+
+`
+const TextLightAccent = css`
+    color:  ${({theme}) => theme.colors.text.accent.light};
+
+`
+const TextDark = css`
+    color:  ${({theme}) => theme.colors.text.dark};
+
+`
+const TextDarkAccent = css`
+    color:  ${({theme}) => theme.colors.text.accent.dark};
+
+`
+
 const DarkTheme = css`
-background-color: ${({theme}) => theme.colors.background.dark};
-& * > h1 {
-    color: ${({theme}) => theme.colors.text.light};
-}
-& * > h2 {
-    color: ${({theme}) => theme.colors.text.dark};
-}
-& * > p {
-    color: ${({theme}) => theme.colors.text.accent.dark};
-}
+${BackgroundDark};
+& > h1, * > h1 {
+    ${TextLight};
+};
+& > h2, * > h2 {
+    ${TextLightAccent};
+};
+& > p, * > p {
+    ${TextLight};
+};
+& > button, * > button {
+    ${BackgroundLightAccent};
+    & > p {
+        ${TextLight};
+    }
+};
 `
 const DarkAccentTheme = css`
-background-color: ${({theme}) => theme.colors.background.accent.dark};
-& * > h1 {
-    color: ${({theme}) => theme.colors.text.accent.dark};
+${BackgroundDarkAccent};
+& > h1, * > h1 {
+    ${TextLightAccent}
 }
-& * > h2 {
-    color: ${({theme}) => theme.colors.text.accent.light};
+& > h2, * > h2 {
+    ${TextLightAccent}
 }
-& * > p {
-    color: ${({theme}) => theme.colors.text.light};
+& > p, * > p {
+    ${TextLight}
+}
+& > button, * > button {
+    ${BackgroundLightAccent}
+    & > p {
+    ${TextDarkAccent}
+    }
 }
 `
 const LightTheme = css`
-background-color: ${({theme}) => theme.colors.background.light};
-& * > h1 {
-    color: ${({theme}) => theme.colors.text.accent.light};
+${BackgroundLight};
+& > h1, * > h1 {
+    ${TextDark}
 }
-& * > h2 {
-    color: ${({theme}) => theme.colors.text.light};
+& > h2, * > h2 {
+    ${TextDarkAccent}
 }
-& * > p {
-    color: ${({theme}) => theme.colors.text.light};
+& > p, * > p {
+    ${TextDark}
+}
+& > button, * > button {
+    ${BackgroundDark}
+    & > p {
+        ${TextLight}
+    }
 }
 `
 const LightAccentTheme = css`
-background-color: ${({theme}) => theme.colors.background.accent.light};
-& * > h1 {
-    color: ${({theme}) => theme.colors.text.dark};
+${BackgroundLightAccent};
+& > h1, * > h1 {
+    ${TextDarkAccent}
 }
-& * > h2 {
-    color: ${({theme}) => theme.colors.text.dark};
+& > h2, * > h2 {
+    ${TextDark}
 }
-& * > p {
-    color: ${({theme}) => theme.colors.text.dark};
+& > p, * > p {
+    ${TextDarkAccent}
+}
+& > button, * > button {
+    ${BackgroundDarkAccent}
+    & > p {
+        ${TextLightAccent}
+    }
 }
 `
 export const ThemeSelector = css`

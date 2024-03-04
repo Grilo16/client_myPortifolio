@@ -18,7 +18,7 @@ import {
   StudioMaxIcon,
 } from "../../assets";
 import { useState } from "react";
-import { BorderRadius, CenteredFlex, LineHighlightOnHover } from "../../style";
+import { AssignedThemes, BorderRadius, CenteredFlex, LineHighlightOnHover } from "../../style";
 import { Skill } from "./Skill";
 
 export const Skills = () => {
@@ -107,7 +107,7 @@ export const Skills = () => {
   return (
     <Section
       layout={"flex-column"}
-      theme={"dark"}
+      theme={AssignedThemes.skills}
       justifyContent={"center"}
     >
 

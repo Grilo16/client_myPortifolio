@@ -1,11 +1,12 @@
 import styled from "styled-components";
 import { ContentWrapper, Heading, Paragraph, Section, Subheading } from "../layout";
+import { AssignedThemes } from "../../style";
 
 export const Hero = () => {
     return (
         
         <Section 
-            theme={"dark"}
+            theme={AssignedThemes.hero}
             layout={"auto-grid"}
             minColumnSize={"44ch"}
             placeItems={"center center"}
@@ -14,7 +15,6 @@ export const Hero = () => {
             <CoverImg src="/HeroBanner.png" alt="" />
             
             <ContentWrapper 
-                theme={"dark"} 
                 layout={"flex"} 
                 flexDirection={"column"}
                 gap={"4rem"}

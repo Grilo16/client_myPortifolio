@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import { ThemeSelector } from "../../../../../style";
+import { AssignedThemes, ThemeSelector } from "../../../../../style";
 import { BaseCardFace } from "../BaseCardFace";
 
 export const CardBackFaceOuter = ({children, ...props}) => {
     return (
         <CardBackDiv
-            $theme={"dark-accent"}
+            $theme={AssignedThemes.projects.card.back.outer}
             {...props}
         >
                 {children}

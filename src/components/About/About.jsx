@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import { ContentWrapper, Heading, Paragraph, Section } from "../layout";
+import { AssignedThemes } from "../../style";
 
 export const About = () => {
     return (
       <Section
-        theme={"dark"}
+        theme={AssignedThemes.about}
         layout={"fixed-grid"}
         columnCount={"2"}
         minColumnSize={"50ch"}

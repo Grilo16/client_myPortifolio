@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ThemeSelector } from "../../../style";
 
 export const ProjectOuterCard = ({children, ...props}) => {
     return (

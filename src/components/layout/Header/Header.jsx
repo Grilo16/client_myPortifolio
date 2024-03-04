@@ -6,7 +6,7 @@ import { GitHubIcon, GmailIcon, LinkedInIcon } from "../../../assets"
 
 export const Header = () => {
     return (
-        <StyledHeader $theme={"dark"} $layout={"flex"} $justifyContent={"flex-end"} $alignItems={"center"} $padding={"0 1rem"}>
+        <StyledHeader $layout={"flex"} $justifyContent={"flex-end"} $alignItems={"center"} $padding={"0 1rem"}>
             <ContentWrapper
               layout={"flex"}
               gap={"2rem"}
