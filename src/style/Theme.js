@@ -83,21 +83,3 @@ export const AssignedThemes = {
 }
 
 
-// colors: {
-//     background: {
-//         light : colors.ghostWhite,
-//         dark : colors.jet,
-//         accent: {
-//             light: colors.uranianBlue,
-//             dark: colors.davieGray,
-//         },
-//     },
-    
-//     text: {
-//         light: colors.platinum, 
-//         dark: colors.jet,
-//         accent: {
-//             light: colors.coral,
-//             dark: colors.davieGray,
-//         }
-//     },
