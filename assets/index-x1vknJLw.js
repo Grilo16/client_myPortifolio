@@ -470,7 +470,7 @@ place-items: stretch;
     ${ol};
     ${nr};
     ${lr};
-    `,b4=()=>a.jsxs(ul,{theme:kt.hero,layout:"auto-grid",minColumnSize:"44ch",placeItems:"center center",minHeight:"calc(100vh, 4rem)",children:[a.jsx(e5,{src:"/HeroBanner.png",alt:""}),a.jsxs(B,{layout:"flex",flexDirection:"column",gap:"4rem",children:[a.jsxs(B,{layout:"flex-column",gap:"0.5rem",children:[a.jsx(Be,{size:"xx-large",children:"Thomas Britton"}),a.jsx(ht,{children:"Full-Stack Software Developer"}),a.jsx(ne,{maxWidth:"45ch",children:"Crafting innovative solutions with expertise in Java, Javascript, and Python. Let's build something amazing together!"})]}),a.jsx("form",{action:"/TomBrittonCv.pdf",value:"Download CV",target:"_blank",children:a.jsxs(t5,{children:[" ",a.jsx(ne,{children:"Get My Resume"})]})})]})]}),e5=U.img`
+    `,b4=()=>a.jsxs(ul,{theme:kt.hero,layout:"auto-grid",minColumnSize:"44ch",placeItems:"center center",minHeight:"calc(100vh, 4rem)",children:[a.jsx(e5,{src:"/HeroBanner.png",alt:""}),a.jsxs(B,{layout:"flex",flexDirection:"column",gap:"4rem",children:[a.jsxs(B,{layout:"flex-column",gap:"0.5rem",children:[a.jsx(Be,{size:"xx-large",children:"Thomas Britton"}),a.jsx(ht,{children:"Full-Stack Software Developer"}),a.jsx(ne,{maxWidth:"45ch",children:"Crafting innovative solutions with expertise in Java, Javascript, and Python. Let's build something amazing together!"})]}),a.jsx("form",{action:"/TomBrittonCv.pdf",value:"Download CV",target:"_blank",children:a.jsxs(t5,{children:[" ",a.jsx(ne,{children:"Get My Resume"})]})}),a.jsx("p",{children:"Maybe adding a paragraph will help"})]})]}),e5=U.img`
     object-fit: contain;
     border-radius: 1rem;
     align-self: center;
