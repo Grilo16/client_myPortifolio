@@ -49,7 +49,7 @@ const PageIndicator = styled.button`
     width: 4px;
     background-color: aqua;
     border-radius: 50vw;
-    transition: 0.5s ease-in-out;
+    transition: 0.1s ease-in-out;
 
 `
 

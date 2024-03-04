@@ -3,6 +3,8 @@ import { skillData } from "../Skills";
 const {react, javascript, java, html, css, spring} = {...skillData}
 
 export const duckysRevenge3D = {
+  projectName: "Ducky's Revenge 3D",
+  banner: "/projectsMedia/DuckysRevenge3D/Banner.png",
   links: [
     {
       label: "Client Repo",
@@ -13,7 +15,6 @@ export const duckysRevenge3D = {
       link: "https://www.duckydomain.com/",
     },
   ],
-  projectName: "Ducky's Revenge 3D",
   overview: [
     "Dive into the immersive world of Ducky's Revenge this time in 3D.", 
     "Embark on an epic journey and engage again in heart-pounding game of shooting skeletons with blackholes.",
@@ -107,6 +108,7 @@ export const duckysRevenge3D = {
 
 export const duckysRevenge = {
   projectName: "Ducky's Revenge",
+  banner: "/projectsMedia/DuckysRevenge/Banner.png",
   links: [
     {
       label: "Client Repo",
@@ -175,6 +177,7 @@ export const duckysRevenge = {
 
 export const RogueBookings = {
   projectName: "Rogue Bookings",
+  banner: "/projectsMedia/RogueBookings/Banner.png",
   links: [
     {
       label: "Client Repo",

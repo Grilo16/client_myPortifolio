@@ -10,11 +10,11 @@ export const CardBackFace = ({children, pages, stack, overview, projectName, lin
 
     const nextPage = () =>
       setCurrentPage((current) =>
-        current >= pages.length ? current : current + 1
+        pages.length === current ? 0 : current + 1
       );
 
     const previousPage = () =>
-      setCurrentPage((current) => (current <= 0 ? current : current - 1));
+      setCurrentPage((current) => (current <= 0 ? pages.length  : current - 1));
 
 
     return (

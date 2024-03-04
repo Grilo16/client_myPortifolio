@@ -48,7 +48,7 @@ export const Footer = () => {
             </ContentWrapper>
           </ContentWrapper>
           <form action="/TomBrittonCv.pdf" value={"Download CV"} target="_blank">
-            <StyledButton>Get My Resume</StyledButton>
+            <StyledButton><Paragraph>Get My Resume</Paragraph></StyledButton>
           </form>
         </ContentWrapper>
       </ContentWrapper>

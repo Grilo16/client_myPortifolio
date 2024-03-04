@@ -27,6 +27,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     #root {
+        position: relative;
         height: inherit;
         overflow: auto;
         display: grid;

@@ -28,6 +28,12 @@ const StyledHeader = styled.header`
     ${ThemeSelector};
     ${LayoutSelector};
     ${SetMarginPadding};
-
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+    & > * {
+      padding: 0.9rem 2rem;
+    }
 
 `

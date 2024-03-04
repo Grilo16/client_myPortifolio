@@ -7,7 +7,7 @@ export const FrontFaceSubHeading = () => {
             weight={"200"}
             justifySelf={"right"}
         >
-            more-{">"}
+            more →
         </Subheading>
     )
 }

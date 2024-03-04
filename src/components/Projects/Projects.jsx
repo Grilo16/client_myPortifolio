@@ -11,8 +11,8 @@ export const Projects = () => {
     <ProjectsSection>
       <ProjectsHeading>Project Highlights</ProjectsHeading>
       <ProjectsContentWrapper>
-        <Project {...duckysRevenge3D}/>
         <Project {...duckysRevenge}/>
+        <Project {...duckysRevenge3D}/>
         <Project {...RogueBookings}/>
       </ProjectsContentWrapper>
     </ProjectsSection>

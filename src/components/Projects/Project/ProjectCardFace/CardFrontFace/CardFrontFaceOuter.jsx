@@ -17,5 +17,6 @@ const CardFrontDiv = styled(BaseCardFace)`
   display: grid;
   padding: 1.5rem;
   grid-template-rows: subgrid;
+  z-index: 2;
   ${ThemeSelector};
 `;

@@ -2,11 +2,11 @@ import { CardFrontFaceInner } from "./CardFrontFaceInner";
 import { CardFrontFaceOuter } from "./CardFrontFaceOuter";
 import { FrontFaceHeading, FrontFaceImage, FrontFaceSubHeading } from "./FrontFaceContents";
 
-export const CardFrontFace = ({projectName}) => {
+export const CardFrontFace = ({projectName, banner}) => {
     return (
         <CardFrontFaceOuter>
             <CardFrontFaceInner>
-                <FrontFaceImage/>
+                <FrontFaceImage banner={banner}/>
                 <FrontFaceHeading projectName={projectName}/>
                 <FrontFaceSubHeading/>
             </CardFrontFaceInner>

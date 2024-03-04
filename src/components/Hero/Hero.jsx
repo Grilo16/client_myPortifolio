@@ -9,10 +9,9 @@ export const Hero = () => {
             layout={"auto-grid"}
             minColumnSize={"44ch"}
             placeItems={"center center"}
-            minHeight={"38rem"}
-            
+            minHeight={"calc(100vh, 4rem)"}
         >
-            <CoverImg src="https://picsum.photos/200" alt="" />
+            <CoverImg src="/HeroBanner.png" alt="" />
             
             <ContentWrapper 
                 theme={"dark"} 
@@ -27,7 +26,7 @@ export const Hero = () => {
                     <Paragraph maxWidth={"45ch"}>Crafting innovative solutions with expertise in Java, Javascript, and Python. Let's build something amazing together!</Paragraph>
                 </ContentWrapper>
                 <form action="/TomBrittonCv.pdf" value={"Download CV"} target="_blank">
-                    <StyledButton>Get My Resume</StyledButton>
+                    <StyledButton> <Paragraph>Get My Resume</Paragraph></StyledButton>
                 </form>
 
             </ContentWrapper>
@@ -39,7 +38,9 @@ export const Hero = () => {
 const CoverImg = styled.img`
     object-fit: contain;
     border-radius: 1rem;
-    align-self: stretch;
+    align-self: center;
+    height: 80%;
+    justify-self: center;
 `
 
 

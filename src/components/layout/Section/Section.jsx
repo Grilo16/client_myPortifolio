@@ -79,5 +79,4 @@ const StyledSection = styled.section`
     ${SetOverflow};
     ${SetDimensions};
     ${SetMarginPadding};
-
     `
