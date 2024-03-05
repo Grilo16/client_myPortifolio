@@ -10,7 +10,7 @@ export const ProjectFeatureOverview = ({media, texts, pageTitle}) => {
 
         <ContentWrapper  layout={"auto-grid"} overflow={"scroll"} padding={"0.25rem"}>
         <Subheading size={"medium"} weight={"200"}>{pageTitle}: </Subheading>
-         {texts.map((text, index) => <Paragraph key={index} size={"small"}>{text}</Paragraph>)}
+         {texts?.map((text, index) => <Paragraph key={index} size={"small"}>{text}</Paragraph>)}
         </ContentWrapper>
         </>
     )

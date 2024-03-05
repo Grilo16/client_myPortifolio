@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { BorderRadius } from "../../../../style";
 
 export const BaseCardFace = styled.div`
+display: contents;
   ${BorderRadius};
   backface-visibility: hidden;
   transform-style: preserve-3d;

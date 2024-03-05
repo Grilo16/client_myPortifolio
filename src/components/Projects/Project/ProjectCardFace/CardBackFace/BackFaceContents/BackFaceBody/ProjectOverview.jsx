@@ -5,9 +5,9 @@ export const ProjectOverview = ({stack, overview, projectName}) => {
 
     const {frontEnd, backEnd, languages} = {...stack}
 
-    const displayLanguages = languages.map(({name, icon}, index) => <Skill noName maxHeight={"4rem"} key={index} name={name} icon={icon}/>)
+    const displayLanguages = languages?.map(({name, icon}, index) => <Skill noName maxHeight={"4rem"} key={index} name={name} icon={icon}/>)
 
-    const displayOverview = overview.map(paragraph => <Paragraph size={"small"}>{paragraph}</Paragraph>)
+    const displayOverview = overview?.map(paragraph => <Paragraph size={"small"}>{paragraph}</Paragraph>)
 
     return (
         <>

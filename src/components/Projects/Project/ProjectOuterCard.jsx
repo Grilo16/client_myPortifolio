@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { ThemeSelector } from "../../../style";
 
 export const ProjectOuterCard = ({children, ...props}) => {
@@ -10,6 +10,12 @@ export const ProjectOuterCard = ({children, ...props}) => {
         </ProjectOuterDiv>
     )
 }
+
+export const templateRows = css`
+  grid-template-rows: 25rem 5rem 0.1rem;
+  
+
+`
 const ProjectOuterDiv = styled.div`
   display: grid;
   background-color: transparent;

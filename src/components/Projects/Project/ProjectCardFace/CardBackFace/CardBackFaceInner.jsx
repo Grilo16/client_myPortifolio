@@ -8,7 +8,6 @@ export const CardBackFaceInner = ({children, ...props}) => {
             height={"100%"}
             padding={"0.5rem 0"}
             maxHeight={"35rem"}
-            minHeight={"35rem"}
             overflow={"hidden"}
             {...props}
         >
