@@ -10,7 +10,6 @@ export const Hero = () => {
             layout={"auto-grid"}
             minColumnSize={"44ch"}
             placeItems={"center center"}
-            minHeight={"calc(100vh, 4rem)"}
         >
             <CoverImg src="/HeroBanner.png" alt="" />
             
@@ -38,8 +37,9 @@ const CoverImg = styled.img`
     object-fit: contain;
     border-radius: 1rem;
     align-self: center;
-    height: 80%;
     justify-self: center;
+    max-height: 80%;
+    margin-top: 2rem;
 `
 
 

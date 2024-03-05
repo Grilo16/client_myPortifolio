@@ -4,8 +4,8 @@ export const Home = () => {
     return (
         <>
             <Hero/>
-            <Projects/>
             <Skills/>
+            <Projects/>
             <About/>
         </>
     )
