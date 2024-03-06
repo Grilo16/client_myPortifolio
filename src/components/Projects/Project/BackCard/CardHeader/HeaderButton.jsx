@@ -1,6 +1,6 @@
 import styled from "styled-components"
-import { Paragraph } from "../../../../../../layout"
-import { LineHighlightOnHover } from "../../../../../../../style"
+import { Paragraph } from "../../../.."
+import { LineHighlightOnHover } from "../../../../../style"
 
 export const HeaderButton = ({label, link}) => {
   

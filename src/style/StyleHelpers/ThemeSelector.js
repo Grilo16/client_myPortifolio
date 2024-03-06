@@ -33,16 +33,17 @@ const TextDarkAccent = css`
 
 const DarkTheme = css`
 ${BackgroundDark};
-& > h1, * > h1 {
+
+& > h1 {
     ${TextLight};
 };
-& > h2, * > h2 {
+& > h2 {
     ${TextLightAccent};
 };
-& > p, * > p {
+& > p {
     ${TextLight};
 };
-& > button, * > button {
+& button {
     ${BackgroundLightAccent};
     & > p {
         ${TextLight};
@@ -51,16 +52,16 @@ ${BackgroundDark};
 `
 const DarkAccentTheme = css`
 ${BackgroundDarkAccent};
-& > h1, * > h1 {
+& > h1 {
     ${TextLightAccent}
 }
-& > h2, * > h2 {
+& > h2 {
     ${TextLightAccent}
 }
-& > p, * > p {
+& > p {
     ${TextLight}
 }
-& > button, * > button {
+& button {
     ${BackgroundLightAccent}
     & > p {
     ${TextDarkAccent}
@@ -69,34 +70,36 @@ ${BackgroundDarkAccent};
 `
 const LightTheme = css`
 ${BackgroundLight};
-& > h1, * > h1 {
+
+& > h1 {
     ${TextDark}
 }
-& > h2, * > h2 {
+& > h2 {
     ${TextDarkAccent}
 }
-& > p, * > p {
+& > p {
     ${TextDark}
 }
-& > button, * > button {
+& button {
     ${BackgroundDark}
     & > p {
         ${TextLight}
     }
 }
+
 `
 const LightAccentTheme = css`
 ${BackgroundLightAccent};
-& > h1, * > h1 {
+& > h1 {
     ${TextDarkAccent}
 }
-& > h2, * > h2 {
+& > h2 {
     ${TextDark}
 }
-& > p, * > p {
+& > p {
     ${TextDarkAccent}
 }
-& > button, * > button {
+& button {
     ${BackgroundDarkAccent}
     & > p {
         ${TextLightAccent}

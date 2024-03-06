@@ -1,9 +1,9 @@
-import { ContentWrapper } from "../../../../../../layout"
+import { ContentWrapper } from "../../../..";
 import { HeaderButton } from "./HeaderButton";
 
-export const BackFaceHeader = ({children, buttonsData, ...props}) => {
+export const CardHeader = ({children, links, ...props}) => {
 
-  const HeaderButtons = buttonsData.map((button, index) => (
+  const HeaderButtons = links.map((button, index) => (
     <HeaderButton key={index} {...button} />
   ));
 

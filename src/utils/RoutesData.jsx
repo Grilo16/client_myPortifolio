@@ -2,7 +2,7 @@ import * as pages from "../pages"
 
 export const routesData = [
     {
-        element: <pages.TestPage/>,
+        element: <pages.Home/>,
         path: "/",
         label: "home",
     },
