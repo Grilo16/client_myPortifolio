@@ -121,6 +121,8 @@ export const Skills = () => {
           width={"70%"}
           minHeight={"5rem"}
           alignSelf={"center"}
+          theme={AssignedThemes.skills}
+
         >
 
           <ContentLineHighlight
@@ -128,7 +130,7 @@ export const Skills = () => {
             onPointerOver={() => setHighighted("design")}
             onPointerOut={() => setHighighted("")}
             {...CenteredFlex}
-          minHeight={"5rem"}
+            minHeight={"5rem"}
             minWidth={"100%"}
           >
             <Heading size={"medium"}>Design</Heading>
@@ -164,6 +166,7 @@ export const Skills = () => {
           minColumnSize={"4rem"}
           padding={"1rem"}
           placeItems={"center"}
+          theme={AssignedThemes.skills}
         >
           {skills}
         </ContentWrapper>

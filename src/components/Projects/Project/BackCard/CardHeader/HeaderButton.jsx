@@ -1,6 +1,6 @@
 import styled from "styled-components"
-import { Paragraph } from "../../../../../../layout"
-import { LineHighlightOnHover } from "../../../../../../../style"
+import { Paragraph } from "../../../.."
+import { LineHighlightOnHover } from "../../../../../style"
 
 export const HeaderButton = ({label, link}) => {
   
@@ -12,10 +12,10 @@ export const HeaderButton = ({label, link}) => {
 }
 
 const StyledButton = styled.button`
-padding: 0 0.25rem;  
-min-height: 100%;
-${LineHighlightOnHover};
+padding: 0.5rem 0.25rem;  
+height: min-content;
 background: transparent !important;
+${LineHighlightOnHover};
 & > p {
   color: white !important;
 }

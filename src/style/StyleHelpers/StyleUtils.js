@@ -4,13 +4,13 @@ export const rotatingCardStyle = {
   setHight: "20rem",
 }
 
-
-
 export const CenteredFlex = {
     layout: "flex-column",
     justifyContent: "center",
     alignItems: "center",
 }
+
+
 
 export const LineHighlightOnHover = css`
 isolation: isolate;
@@ -24,14 +24,12 @@ position: relative;
   top: 99%;
   background-color: white;
   z-index: -1;
-}
+};
 &:hover::before {
   top: 99%;
   inset-inline: 20%;
   background-color: white;
-  
-  
-}
+};
 `
 
 export const SetMarginPadding = css`
@@ -51,22 +49,22 @@ export const SectionPadding = css`
     padding-inline: min(10rem, 10%);
 `
 export const BorderRadius = css`
-border-radius: 5px;
+border-radius: ${({$borderRadius}) => $borderRadius ?? "5px"};
 `
 export const SetFontLayout = css`
  ${({ $weight }) => ($weight ? `font-weight: ${$weight}` : null)};
 font-size: ${({ $size }) =>
     $size === "small"
-      ? `clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem)`
+      ? `clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);`
       : $size === "medium"
-      ? `clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem)`
+      ? `clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);`
       : $size === "large"
-      ? `clamp(1.56rem, 1vw + 1.31rem, 2.11rem)`
+      ? `clamp(1.56rem, 1vw + 1.31rem, 2.11rem);`
       : $size === "x-large"
-      ? `clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem)`
+      ? `clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);`
       : $size === "xx-large"
-      ? `clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem)`
+      ? `clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);`
       : $size === "xxx-large"
-      ? `clamp(3.05rem, 3.54vw + 2.17rem, 5rem)`
-      : `clamp(1rem, 0.34vw + 0.91rem, 1.19rem)`};
+      ? `clamp(3.05rem, 3.54vw + 2.17rem, 5rem);`
+      : `clamp(1rem, 0.34vw + 0.91rem, 1.19rem);`};
 `
