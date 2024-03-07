@@ -1,9 +1,9 @@
 import styled from "styled-components"
-import { LeftArrowIcon, RightArrowIcon } from "../../../../../../../assets"
-import { ContentWrapper, Paragraph } from "../../../../../../layout"
-import { AssignedThemes } from "../../../../../../../style"
+import { LeftArrowIcon, RightArrowIcon } from "../../../../../assets"
+import { ContentWrapper } from "../../../.."
+import { AssignedThemes } from "../../../../../style"
 
-export const BackFaceFooter = ({children, nextPage, previousPage, currentPage, pages, setCurrentPage, ...props}) => {
+export const CardFooter = ({children, nextPage, previousPage, currentPage, pages, setCurrentPage, ...props}) => {
 
     const pageIndicators = ["Overview Page", ...pages].map((page, index) => <PageIndicator onClick={() => setCurrentPage(index)} key={index}/>)
 
@@ -14,11 +14,12 @@ export const BackFaceFooter = ({children, nextPage, previousPage, currentPage, p
             justifyContent={"space-around"}
             alignItems={"center"}
             gap={"5%"}
-            padding={"0 5%"}
+            padding={"0.2rem 5% 0"}
+            borderRadius={"1rem"}
             {...props}
         >
             <ArrowButtonWrapper>
-                <LeftArrowIcon onClick={previousPage} height={"2rem"}/>
+                <LeftArrowIcon onClick={previousPage} height={"1.5rem"}/>
             </ArrowButtonWrapper>
             
                 <PageIndicatorWrapper $currentPage={currentPage}>
@@ -26,7 +27,7 @@ export const BackFaceFooter = ({children, nextPage, previousPage, currentPage, p
                 </PageIndicatorWrapper>
             
             <ArrowButtonWrapper >
-                <RightArrowIcon onClick={nextPage} height={"2rem"}/>
+                <RightArrowIcon onClick={nextPage} height={"1.5rem"}/>
             </ArrowButtonWrapper>
    
         </ContentWrapper>
@@ -55,7 +56,7 @@ const PageIndicator = styled.button`
 `
 
 const ArrowButtonWrapper = styled.button`
-    min-height: 2rem;
-    min-width: 2rem;
+    min-height: 1.5rem;
+    min-width: 1.5rem;
     background: transparent !important;
 `

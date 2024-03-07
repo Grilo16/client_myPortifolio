@@ -33,75 +33,79 @@ const TextDarkAccent = css`
 
 const DarkTheme = css`
 ${BackgroundDark};
-& > h1, * > h1 {
+
+& > h1, & > * > h1 {
     ${TextLight};
 };
-& > h2, * > h2 {
+& > h2, & > * > h2 {
     ${TextLightAccent};
 };
-& > p, * > p {
+& > p, & > * > p, & > a, & > * > a {
     ${TextLight};
 };
-& > button, * > button {
+
+& > button, & > * > button {
     ${BackgroundLightAccent};
-    & > p {
+    > p {
         ${TextLight};
     }
 };
 `
 const DarkAccentTheme = css`
 ${BackgroundDarkAccent};
-& > h1, * > h1 {
-    ${TextLightAccent}
-}
-& > h2, * > h2 {
-    ${TextLightAccent}
-}
-& > p, * > p {
-    ${TextLight}
-}
-& > button, * > button {
-    ${BackgroundLightAccent}
+& > h1, & > * > h1 {
+    ${TextLightAccent};
+};
+& > h2, & > * > h2 {
+    ${TextLightAccent};
+};
+& > p, & > * > p, & > a, & > * > a {
+    ${TextLight};
+};
+& > button, & > * > button {
+    ${BackgroundLightAccent};
     & > p {
-    ${TextDarkAccent}
-    }
-}
+    ${TextDarkAccent};
+    };
+};
 `
 const LightTheme = css`
 ${BackgroundLight};
-& > h1, * > h1 {
-    ${TextDark}
-}
-& > h2, * > h2 {
-    ${TextDarkAccent}
-}
-& > p, * > p {
-    ${TextDark}
-}
-& > button, * > button {
-    ${BackgroundDark}
+
+& > h1, & > * > h1 {
+    ${TextDark};
+};
+& > h2, & > * > h2 {
+    ${TextDarkAccent};
+};
+& > p, & > * > p, & > a, & > * > a {
+    ${TextDark};
+};
+& > button, & > * > button {
+    ${BackgroundDark};
     & > p {
-        ${TextLight}
-    }
-}
+        ${TextLight};
+    };
+};
+
 `
 const LightAccentTheme = css`
 ${BackgroundLightAccent};
-& > h1, * > h1 {
-    ${TextDarkAccent}
-}
-& > h2, * > h2 {
-    ${TextDark}
-}
-& > p, * > p {
-    ${TextDarkAccent}
-}
-& > button, * > button {
-    ${BackgroundDarkAccent}
+& > h1, & > * > h1 {
+    ${TextDarkAccent};
+};
+& > h2, & > * > h2 {
+    ${TextDark};
+};
+& > p, & > * > p, & > a, & > * > a {
+    ${TextDarkAccent};
+};
+& > button, & > * > button {
+    ${BackgroundDarkAccent};
     & > p {
-        ${TextLightAccent}
-    }
-}
+        ${TextLightAccent};
+    };
+};
 `
 export const ThemeSelector = css`
     ${({$theme}) => 

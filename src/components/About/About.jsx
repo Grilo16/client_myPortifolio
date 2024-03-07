@@ -19,7 +19,7 @@ export const About = () => {
           templateColumns={"min(65ch, 100%)"}
           placeContent={"center center"}
         >
-          <Heading>About Me</Heading>
+          <Heading as={"h2"}>About Me</Heading>
 
             
           <Paragraph>

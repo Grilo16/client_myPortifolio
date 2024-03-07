@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { LayoutSelector, SetDimensions, SetMarginPadding, SetOverflow, SetSelfAlign, SetTextAlign, ThemeSelector } from "../../../style"
+import { BorderRadius, LayoutSelector, SetDimensions, SetMarginPadding, SetOverflow, SetSelfAlign, SetTextAlign, ThemeSelector } from "../../../style"
 
 export const ContentWrapper = ({
     children, 
@@ -33,6 +33,7 @@ export const ContentWrapper = ({
     maxWidth,
     margin,
     padding,
+    borderRadius,
     ...props
 }) => {
     return (
@@ -67,6 +68,7 @@ export const ContentWrapper = ({
         $maxWidth={maxWidth}
         $margin={margin}
         $padding={padding}
+        $borderRadius={borderRadius}
         {...props}
         >
 {children}
@@ -82,4 +84,5 @@ ${SetOverflow};
 ${SetDimensions};
 ${SetMarginPadding};
 ${SetSelfAlign};
+${BorderRadius};
 `

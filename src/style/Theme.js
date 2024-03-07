@@ -78,7 +78,7 @@ export const AssignedThemes = {
         },
     },
     skills: "dark",
-    about: "dark-accent",
+    about: "dark",
     footer: "dark",
 }
 
