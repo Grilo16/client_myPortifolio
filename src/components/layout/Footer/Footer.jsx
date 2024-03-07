@@ -7,7 +7,9 @@ import { Paragraph, Subheading } from "../Text";
 export const Footer = () => {
   return (
     <StyledFooter $theme={AssignedThemes.footer}>
+
       <ContentWrapper layout={"auto-grid"}>
+
         <ContentWrapper
           layout={"flex-column"}
           gap={"1rem"}
@@ -15,34 +17,27 @@ export const Footer = () => {
           $theme={AssignedThemes.footer}
         >
           <Subheading>Contact</Subheading>
-          <ContentWrapper layout={"flex-column"} gap={"1rem"}>
-            <a href="mailto:tom.jf.britton@gmail.com?subject=Hi I saw your portifolio"> 
-            <ContentWrapper layout={"flex"} gap={"1rem"} alignItems={"center"}
-          $theme={AssignedThemes.footer}
-          >
-              <MailIcon width={"2rem"} />
-              <Paragraph>tom.jf.britton@gmail.com</Paragraph>
-            </ContentWrapper>
-            </a> 
 
             <ContentWrapper layout={"flex"} gap={"1rem"} alignItems={"center"}
-          $theme={AssignedThemes.footer}
-          >
+            >
+              <MailIcon width={"2rem"} />
+              <Paragraph as={"a"} href="mailto:tom.jf.britton@gmail.com?subject=Hi I saw your portifolio">tom.jf.britton@gmail.com</Paragraph>
+            </ContentWrapper>
+
+            <ContentWrapper layout={"flex"} gap={"1rem"} alignItems={"center"}>
               <PhoneIcon width={"2rem"} />
               <Paragraph>(+44) 7402-921-531 </Paragraph>
             </ContentWrapper>
+            
           </ContentWrapper>
-        </ContentWrapper>
 
-        <ContentWrapper
+      <ContentWrapper
           layout={"flex-column"}
           gap={"1rem"}
           alignItems={"center"}
-
-        >
-          <ContentWrapper layout={"flex-column"} gap={"1rem"} 
           $theme={AssignedThemes.footer}
-          >
+        >
+     
             <Subheading>Follow Me </Subheading>
             <ContentWrapper
               layout={"flex"}
@@ -56,7 +51,7 @@ export const Footer = () => {
                 <LinkedInIcon width={"2rem"} />
               </a>
             </ContentWrapper>
-          </ContentWrapper>
+            
           <form action="/TomBrittonCv.pdf" value={"Download CV"} target="_blank">
             <StyledButton><Paragraph>Get My Resume</Paragraph></StyledButton>
           </form>
@@ -66,6 +61,7 @@ export const Footer = () => {
       <Paragraph alignSelf={"center"} size={"small"}>
         &copy; 2024 Thomas Britton. All rights reserved.
       </Paragraph>
+
     </StyledFooter>
   );
 };

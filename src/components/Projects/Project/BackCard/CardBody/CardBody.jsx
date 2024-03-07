@@ -1,4 +1,5 @@
 import { ContentWrapper } from "../../../..";
+import { AssignedThemes } from "../../../../../style";
 import { ProjectFeatureOverview } from "./ProjectFeatureOverview";
 import { ProjectOverview } from "./ProjectOverview";
 
@@ -13,14 +14,14 @@ export const CardBody = ({
 }) => {
   return (
     <ContentWrapper
-      theme={"dark-accent"}
-      // theme={AssignedThemes.projects.card.back.body}
-      overflow={"scroll"}
+      theme={AssignedThemes.projects.card.back.body}
       layout={"flex-column"}
       justifyContent={"stretch"}
       alignItems={"stretch"}
       gap={"0.5rem"}
       padding={"1rem 1rem 0"}
+      borderRadius={"1rem"}
+      
       {...props}
     >
       {currentPage === 0 ? (

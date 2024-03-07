@@ -13,7 +13,6 @@ export const Project = ({project}) => {
     )
   }
 
-  
 const RotatingCardWrapper = styled.div`
 position: relative;
 
@@ -36,7 +35,6 @@ height: 35rem;
     & > * {
         transform: translateZ(100px);
         overflow: hidden;
-
     }
 }
 

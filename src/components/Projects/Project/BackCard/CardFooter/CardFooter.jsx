@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import { LeftArrowIcon, RightArrowIcon } from "../../../../../assets"
 import { ContentWrapper } from "../../../.."
+import { AssignedThemes } from "../../../../../style"
 
 export const CardFooter = ({children, nextPage, previousPage, currentPage, pages, setCurrentPage, ...props}) => {
 
@@ -8,13 +9,13 @@ export const CardFooter = ({children, nextPage, previousPage, currentPage, pages
 
     return (
         <ContentWrapper
-            theme={"dark-accent"}
-            // theme={AssignedThemes.projects.card.back.footer}
+            theme={AssignedThemes.projects.card.back.footer}
             layout={"flex"}
             justifyContent={"space-around"}
             alignItems={"center"}
             gap={"5%"}
             padding={"0.2rem 5% 0"}
+            borderRadius={"1rem"}
             {...props}
         >
             <ArrowButtonWrapper>

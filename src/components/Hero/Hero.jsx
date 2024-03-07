@@ -17,8 +17,8 @@ export const Hero = () => {
                 layout={"flex"} 
                 flexDirection={"column"}
                 gap={"4rem"}
+                theme={AssignedThemes.hero}
             >
-
                 <ContentWrapper layout={"flex-column"} gap={"0.5rem"} >
                     <Heading size={"xx-large"}>Thomas Britton</Heading>
                     <Subheading>Full-Stack Software Developer</Subheading>
@@ -26,7 +26,7 @@ export const Hero = () => {
                 </ContentWrapper>
                 <form action="/TomBrittonCv.pdf" value={"Download CV"} target="_blank">
                     <StyledButton> <Paragraph>Get My Resume</Paragraph></StyledButton>
-                </form>
+                </form> 
             </ContentWrapper>
         </Section>
     )

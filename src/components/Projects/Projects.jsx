@@ -13,7 +13,7 @@ export const Projects = () => {
     alignItems: "center",
     gap: "2rem",
   }
-
+  
   const InnerContentLayout = {
     layout: "auto-grid",
     placeItems: "center",

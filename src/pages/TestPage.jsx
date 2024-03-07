@@ -7,64 +7,11 @@ import { Section } from "../components"
 export const TestPage = () => {
 
     return (
-        <Section layout={"fixed-grid"} columnCount={2} theme={"dark-accent"}>
-                <Project project={duckysRevenge3D} />
-                <Project project={duckysRevenge} />
+        <Section layout={"fixed-grid"} columnCount={3} theme={"light"} margin={"10rem"}>
+
         </Section>        
     )
 }
-
-
-const RotatingCardWrapper = styled.div`
-    position: relative;
-    
-    background-color: transparent;
-    transform-style: preserve-3d;
-    perspective: 2000px;
-
-    width: min(30rem, 100%);
-    height: 30rem;
-    
-    & > div {
-        inset: 0;
-        position: absolute;
-        transform-style: preserve-3d;
-        backface-visibility: hidden;
-        transition: transform 0.7s ease-in-out;
-
-        padding: max(4%, 1.2rem) max(5%, 0.7rem) 2.9rem;
-
-        & > * {
-            transform: translateZ(100px);
-            overflow: hidden;
-
-        }
-    }
-
-    & > :last-child{
-        transform: rotateY(-180deg) ;
-    }
-
-    &:hover {
-        & > :first-child{
-            transform: rotateY(180deg) ;
-        }
-        
-        & > :last-child{
-            transform: rotateY(0deg) ;
-        } 
-    }
-`
-
-
-
-const StyledImg = styled.img`
-object-fit: cover;    
-
-
-`
-
-
 
 
 
